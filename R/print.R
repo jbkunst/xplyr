@@ -1,7 +1,7 @@
 xplyr_max_changes <- function() {
   value <- getOption("xplyr.max_changes", 3)
 
-  if (length(value) != 1 || is.na(value) || value < 0) return(3)
+  if (!is.numeric(value) || length(value) != 1 || is.na(value) || value < 0) return(3)
 
   value
 }
