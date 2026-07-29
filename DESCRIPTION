@@ -1,0 +1,15 @@
+Package: xplyr
+Type: Package
+Title: See What Changes in Data Pipelines
+Version: 0.0.0.9000
+Authors@R: person("Joshua", "Kunst", role = c("aut", "cre"), email = "jbkunst@gmail.com")
+Description: A small experimental companion for 'dplyr' pipelines. It adds
+    lightweight console feedback about notable consequences of data
+    transformations, with an initial pedagogical focus on filter() and mutate().
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    cli,
+    dplyr
